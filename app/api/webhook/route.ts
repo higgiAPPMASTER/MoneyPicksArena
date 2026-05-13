@@ -1,8 +1,9 @@
-import { NextResponse } from 'next/server'
+ 
 
-export const dynamic = 'force-dynamic'
+  38 |       const userId = session.metadata?.user_id
 
-// Stripe webhook — will be activated when payments go live
-export async function POST() {
-  return NextResponse.json({ received: true })
-}
+  39 |       const customerId = session.customer as string
+
+  40 |       const subscriptionId = session.subscription as string
+
+Error: Command "npm run build" exited with 1
